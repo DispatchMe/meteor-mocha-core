@@ -5,3 +5,5 @@ import 'mocha/mocha.js';
 mocha.setup({
   ui: 'bdd',
 });
+
+export { mocha };

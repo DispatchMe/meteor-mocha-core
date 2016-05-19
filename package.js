@@ -2,7 +2,7 @@ Package.describe({
   name: "dispatch:mocha-core",
   summary: "Core package used by dispatch:mocha-* packages to avoid conflicts",
   git: "https://github.com/DispatchMe/meteor-mocha-core.git",
-  version: '0.0.1',
+  version: '0.0.2',
   testOnly: true,
 });
 
@@ -19,6 +19,6 @@ Package.onUse(function (api) {
     'practicalmeteor:mocha-core@0.1.4',
   ], 'server');
 
-  api.addFiles('client.js', 'client');
+  api.mainModule('client.js', 'client');
   api.mainModule('server.js', 'server');
 });
